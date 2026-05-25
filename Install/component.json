@@ -1,0 +1,72 @@
+{
+	"name" : "Charges",
+	"route" : "tools/charges",
+	"description" : "<p>TMS charges component to manage charges that are used in Lrs and Invoices</p>",
+	"module_type" : "components",
+	"app_type" : "tms",
+	"category" : "admin",
+	"version" : "0.0.0",
+	"repo" : "https://github.com/sp-tms/tms-components-admin-toolscharges",
+	"class" : "Apps\\Tms\\Components\\Tools\\Charges\\ChargesComponent",
+	"dependencies" : 
+	{
+		"core" : 
+		{
+			"name" : "Core",
+			"version" : "0.0.0-rc.15",
+			"repo" : "https://github.com/sp-framework/core"
+		},
+		"apptype" : 
+		{
+			"name" : "Transport Management System",
+			"version" : "0.0.0",
+			"repo" : "https://github.com/sp-tms/tms"
+		},
+		"packages" : 
+		[
+			{
+				"name" : "ToolsCharges",
+				"version" : "0.0.0",
+				"repo" : "https://github.com/sp-tms/tms-packages-tools-toolscharges"
+			}
+		],
+		"middlewares" : [],
+		"views" : [],
+		"externals" : 
+		{
+			"composer" : 
+			{
+				"require" : []
+			},
+			"config" : 
+			{
+				"allow-plugins" : []
+			},
+			"extra" : 
+			{
+				"patches" : []
+			}
+		}
+	},
+	"menu" : 
+	{
+		"tools" : 
+		{
+			"title" : "tools",
+			"icon" : "cogs",
+			"childs" : 
+			{
+				"charges" : 
+				{
+					"title" : "charges",
+					"icon" : "circle",
+					"link" : "tools/charges"
+				}
+			}
+		},
+		"seq" : "0"
+	},
+	"widgets" : [],
+	"filters" : [],
+	"settings" : []
+}
