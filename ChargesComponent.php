@@ -52,9 +52,9 @@ class ChargesComponent extends BaseComponent
             function ($dataArr) {
                 if ($dataArr && is_array($dataArr) && count($dataArr) > 0) {
                     foreach ($dataArr as &$data) {
-                        if ($data['type'] == '0') {
+                        if ($data['type'] == '1') {
                             $data['type'] = 'Product (' . $data['type'] . ')';
-                        } else if ($data['type'] == '1') {
+                        } else if ($data['type'] == '2') {
                             $data['type'] = 'Charges (' . $data['type'] . ')';
                         }
                     }
