@@ -31,7 +31,14 @@
 			}
 		],
 		"middlewares" : [],
-		"views" : [],
+		"views" : 
+		[
+			{
+				"name" : "ToolsCharges",
+				"version" : "0.1.0",
+				"repo" : "https://github.com/sp-tms/tms-views-admin-default-toolscharges"
+			}
+		],
 		"externals" : 
 		{
 			"composer" : 
